@@ -1,7 +1,7 @@
 import pkg from "pg";
 const { Pool } = pkg;
 
-const connectionString = "postgres://swqgfuur:ka0JHQH7SX40VxRubu8pvC_JPA7AxY5C@tyke.db.elephantsql.com/swqgfuur";
+const connectionString = process.env.PG_CONNECTIONSTRING;
 
 const pool = new Pool({
 	connectionString,
